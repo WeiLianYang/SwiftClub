@@ -90,3 +90,32 @@ if array.contains(3) {
 array.removeAll() // []
 
 
+// 对数组进行遍历
+let arr = [11, 22, 33]
+
+for item in arr {
+    print(item)
+}
+
+// 打印数组的下标及对应元素
+for item in arr.enumerated() {
+    print(item) // (offset: 0, element: 11) (offset: 1, element: 22) (offset: 2, element: 33)
+}
+// 下标遍历
+for index in arr.indices {
+    print(arr[index])
+}
+
+var sortArr = [2, 1, 3, -1]
+// 从小到大排序
+sortArr.sorted(by: <) // [-1, 1, 2, 3]
+
+// 从大到小排序
+sortArr.sorted(by: >) // [3, 2, 1, -1]
+
+// 获取数组最大值
+sortArr.min() // -1
+
+// 获取数组最小值
+sortArr.max() // 3
+
