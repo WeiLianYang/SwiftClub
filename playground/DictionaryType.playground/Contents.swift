@@ -10,9 +10,11 @@ var greeting = "Hello, playground"
 // 创建空字典
 var emptyDict1: [Int : String] = [:]
 var emptyDict2: Dictionary<Int, String> = Dictionary()
+
 // 指定键值类型
 var dict: [Int : String] = [0: "Zero", 1: "One", 2: "Two"]
 var dict2: Dictionary<Int, String> = Dictionary(dictionaryLiteral: (1, "One"), (2, "Two"))
+
 // 自动推断键值类型
 var dictAuto = [0: "Zero", 1: "One", 2: "Two"]
 
@@ -46,7 +48,7 @@ dict // [1: "new one", 2: "Two", 0: "000"]
 
 // 对字典进行遍历
 
-// 遍历字典的建
+// 遍历字典的键
 for ele in dict.keys {
     print(ele)
 }
