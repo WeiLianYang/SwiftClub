@@ -187,11 +187,8 @@ extension OptionalProtocol {
 }
 
 class ClassOptPro: OptionalProtocol {
-    func method() {
-        print("default method ClassOptPro")
-    }
 }
-
+// 调用默认实现
 var claOptIns = ClassOptPro()
 claOptIns.method()
 
